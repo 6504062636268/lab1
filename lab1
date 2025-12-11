@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+	float mid,final,q1,q2,q3,lab,sit;
+	float mid1,final1,q11,q21,q31,lab1,sit1,sum1;
+//	mid = 75; final = 85;
+//	q1 = 40; q2 = 45;
+//	lab = 16; sit = 15;
+    scanf("%f",&mid);
+    scanf("%f",&final);
+    scanf("%f",&q1);
+    scanf("%f",&q2);
+    scanf("%f",&lab);
+    scanf("%f",&sit);
+    mid1 = (mid*30)/100;
+    final1 = (final*35)/120;
+    q11 = (q1*12)/60;
+    q21 = (q2*13)/60;
+    lab1 = (lab*5)/16;
+    sit1 = (sit*5)/16;
+    sum1 = (mid1+final1+q11+q21+lab1+sit1)/6;
+    
+	printf("%10s=%8.2f => %8.2f","Mid",mid,mid1);
+	printf("\n%10s=%8.2f => %8.2f","Final",final,final1); 
+	printf("\n%10s=%8.2f => %8.2f","Q1",q1,q11); 
+	printf("\n%10s=%8.2f => %8.2f","Q2",q2,q21); 
+	printf("\n%10s=%8.2f => %8.2f","Lab",lab,lab1); 
+	printf("\n%10s=%8.2f => %8.2f","Sit;",sit,sit1);
+	printf("\nSUM = %8.2f",sum1);
+}
